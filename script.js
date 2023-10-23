@@ -13,23 +13,21 @@ $(function () {
   //
   // TODO: Add code to apply the past, present, or future class to each time
   function updateTimeBlockStyles() {
-   
     var currentHour = dayjs().format('H');
 
-
     $('.time-block').each(function() {
-       
         var timeBlockHour = parseInt($(this).attr('id').split('-')[1]);
+        var $timeBlock = $(this);
 
         if (timeBlockHour < currentHour) {
-            $(this).removeClass('present future').addClass('past');
+            $timeBlock.addClass('past');
         } else if (timeBlockHour === currentHour) {
-            $(this).removeClass('past future').addClass('present');
+            $timeBlock.addClass('present');
         } else {
-            $(this).removeClass('past present').addClass('future');
+            $timeBlock.addClass('future');
         }
     });
-}
+  }
 
 // Call the function to apply time block styles when the page loads.
 updateTimeBlockStyles();
@@ -50,6 +48,8 @@ updateTimeBlockStyles();
            $(this).find('textarea').val(savedDescription);
        }
    });
+
+   updateTimeBlockStyles();
 
   // TODO: Add code to display the current date in the header of the page.
 
