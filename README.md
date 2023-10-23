@@ -3,4 +3,5 @@ A calender where users can enter a reminder and have it save for a future time. 
 
 ![work-day-scheduler](https://github.com/AmandaAina/Work-Day-Scheduler-/assets/144281800/c4489f3e-d911-476d-a075-015ce0726dc8)
 
-Link to app: 
+Link to app: [
+](https://amandaaina.github.io/Work-Day-Scheduler-/)https://amandaaina.github.io/Work-Day-Scheduler-/
